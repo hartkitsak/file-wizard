@@ -1,13 +1,13 @@
 ---
 name: file-wizard
 description: "จัดระเบียบไฟล์บน Windows ด้วย PowerShell — วิเคราะห์, ค้นหาไฟล์ซ้ำ, rename เป็นชุด, cleanup, จัดโครงสร้าง folder ใช้ Automatically when users mention: organizing files, cleaning up folders, messy Downloads, batch renaming, duplicate files, project folder structure, cluttered desktop, or needing to clean up old files. Activate this skill whenever a user asks to organize, tidy, sort, clean, or manage files — even if they don't explicitly say 'organize'."
-version: 1.0.0
 license: MIT
-compatibility: opencode, claude-code
+compatibility: Designed for Claude Code and opencode
 metadata:
   language: thai
   category: file-management
   platform: windows
+  version: "1.0.0"
 ---
 
 # File Wizard — จัดระเบียบไฟล์บน Windows

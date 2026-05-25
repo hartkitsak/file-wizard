@@ -1,0 +1,61 @@
+{
+  "skill_name": "file-wizard",
+  "evals": [
+    {
+      "id": 1,
+      "name": "downloads-cleanup",
+      "prompt": "ช่วยจัดเรียงไฟล์ใน Downloads ให้หน่อยครับ มันรกมาก มีทั้ง PDF, รูป, installer, ไฟล์งานปนกันหมด อยากให้แยกเป็นหมวดหน่อย",
+      "expected_output": "Skill วิเคราะห์ Downloads folder เสนอโครงสร้าง folder เป็นหมวดหมู่ ถาม confirm ก่อนย้าย แล้ว execute การจัดเรียง",
+      "files": [],
+      "expectations": [
+        "The skill analyzed the Downloads directory structure first before proposing changes",
+        "The skill proposed a folder structure organized by file type or purpose",
+        "The skill asked for confirmation before moving files",
+        "The skill used PowerShell commands to analyze and organize files",
+        "The skill showed a preview of changes before executing"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "find-duplicates",
+      "prompt": "หาไฟล์ซ้ำใน Documents ให้หน่อยครับ น่าจะมีหลายชุดที่โหลดซ้ากัน อยากรู้ว่าไฟล์ไหนซ้ำกันบ้าง แล้วช่วยตัดสินใจว่าจะเก็บอันไหนดี",
+      "expected_output": "Skill ใช้ hash เพื่อหา duplicate files, แสดงรายการไฟล์ซ้ำพร้อมขนาดและวันที่, แนะนำว่าควรเก็บอันไหน, ถามก่อนลบทุกครั้ง",
+      "files": [],
+      "expectations": [
+        "The skill used Get-FileHash or similar method to find exact duplicates",
+        "The skill showed file paths, sizes, and dates for each duplicate set",
+        "The skill recommended which copy to keep with reasoning",
+        "The skill asked for confirmation before any file deletion",
+        "The skill proposed moving deleted files to Recycle Bin instead of permanent deletion"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "batch-rename-photos",
+      "prompt": "ช่วย rename รูปภาพใน folder รูปทริปทะเลให้หน่อยครับ ไฟล์ชื่อ DSC_0001.jpg อะไรแบบนี้ อยากให้เปลี่ยนเป็น format 'ทะเล-วันที่-ลำดับ' เช่น 'ทะเล-20250501-001.jpg' ตามวันที่ถ่ายใน EXIF น่ะครับ",
+      "expected_output": "Skill อ่าน EXIF data หรือ file timestamp, สร้างรูปแบบการ rename, แสดง preview, ถาม confirm แล้ว execute",
+      "files": [],
+      "expectations": [
+        "The skill read EXIF data or file timestamps to determine dates",
+        "The skill showed a preview of the new filenames before renaming",
+        "The skill asked for confirmation before executing the rename",
+        "The skill used PowerShell Rename-Item for batch renaming",
+        "The final filenames followed the requested pattern"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "old-files-cleanup",
+      "prompt": "ช่วยหาไฟล์เก่าๆ ในโปรเจกต์ folder ที่ไม่ได้แตะนานเกิน 1 ปีหน่อยครับ จะได้ archive หรือลบทิ้ง กลัวพื้นที่เต็ม",
+      "expected_output": "Skill ใช้ LastWriteTime filter, แสดงรายการไฟล์เก่าพร้อมขนาด, เสนอทางเลือก archive หรือลบ, ถาม confirm ก่อนทำอะไร",
+      "files": [],
+      "expectations": [
+        "The skill filtered files by LastWriteTime older than 1 year",
+        "The skill showed a summary of total size that could be freed",
+        "The skill offered both archive and delete options",
+        "The skill asked for confirmation before any file modification",
+        "The skill suggested Recycle Bin for deletion"
+      ]
+    }
+  ]
+}

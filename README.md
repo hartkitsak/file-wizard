@@ -46,11 +46,14 @@ Open Claude Code in the target directory and describe what you need:
 
 ## Installation
 
-```powershell
+### Claude Code
+Clone the repository to your skills directory:
+```
 git clone https://github.com/hartkitsak/file-wizard.git "$env:USERPROFILE\.claude\skills\file-wizard"
 ```
 
-For other tools (opencode, etc.), clone anywhere and add the path to your config.
+### Other tools
+Clone anywhere and add the path to your configuration.
 
 **Requirements:** Windows 10/11, PowerShell 7+
 

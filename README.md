@@ -49,7 +49,7 @@ Open Claude Code in the target directory and describe what you need:
 ### Claude Code
 Clone the repository to your skills directory:
 ```
-git clone https://github.com/hartkitsak/file-wizard.git "$env:USERPROFILE\.claude\skills\file-wizard"
+git clone https://github.com/hartkitsak/file-wizard.git ~/.claude/skills/file-wizard
 ```
 
 ### Other tools

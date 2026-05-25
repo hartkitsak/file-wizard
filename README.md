@@ -2,23 +2,19 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-File Wizard is a Claude Code skill for organizing files on Windows using PowerShell. It analyzes folder structures, finds duplicates, batch renames files, and cleans up clutter — all with safety guarantees.
-
----
+File Wizard is a Claude Code skill for organizing files on Windows using PowerShell. It analyzes folder structures, finds duplicates, batch renames files, and cleans up clutter — with safety guarantees for every destructive action.
 
 ## About This Skill
 
-File Wizard teaches Claude how to inspect and reorganize Windows file systems through PowerShell. It covers:
+File Wizard teaches Claude how to inspect and reorganize Windows file systems through PowerShell:
 
 - **Analysis** — Scan folders and break down content by type, size, and age
 - **Deduplication** — Find duplicate files using MD5 hashing with smart retention suggestions
-- **Batch rename** — Rename files by pattern or EXIF metadata (e.g., DSC_0123.jpg → beach-2025-01-15-001.jpg)
+- **Batch rename** — Rename files by pattern or EXIF metadata
 - **Cleanup** — Identify old files, trash, and duplicates for archiving or removal
 - **Safety** — Every destructive action requires confirmation and uses the Recycle Bin
 
 The skill follows a structured workflow: understand the user's intent, analyze, propose a plan, confirm, execute, and summarize.
-
----
 
 ## Usage
 
@@ -42,8 +38,6 @@ Open Claude Code in the target directory and describe what you need:
 จะได้ archive หรือลบทิ้ง
 ```
 
----
-
 ## Installation
 
 ### Claude Code
@@ -56,8 +50,6 @@ git clone https://github.com/hartkitsak/file-wizard.git ~/.claude/skills/file-wi
 Clone anywhere and add the path to your configuration.
 
 **Requirements:** Windows 10/11, PowerShell 7+
-
----
 
 ## License
 

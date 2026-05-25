@@ -153,11 +153,11 @@ file-wizard/
 ## 📥 ติดตั้ง
 
 ```powershell
-# วาง skill ไว้ที่ ~/.opencode/skills/
-git clone https://github.com/hartkitsak/file-wizard.git "$env:USERPROFILE\.opencode\skills\file-wizard"
+# วาง skill ไว้ที่ ~/.claude/skills/ (สำหรับ Claude Code)
+git clone https://github.com/hartkitsak/file-wizard.git "$env:USERPROFILE\.claude\skills\file-wizard"
 ```
 
-หรือ clone ที่ไหนก็ได้ แล้วเพิ่ม path ใน `opencode.json`:
+หรือ clone ที่ไหนก็ได้ แล้วเพิ่ม path ใน config (สำหรับ opencode / tools อื่นๆ):
 
 ```json
 {
@@ -167,7 +167,7 @@ git clone https://github.com/hartkitsak/file-wizard.git "$env:USERPROFILE\.openc
 }
 ```
 
-**Requirements:** Windows 10/11, PowerShell 7+ (recommended), Claude Code / opencode
+**Requirements:** Windows 10/11, PowerShell 7+, Claude Code / opencode
 
 ---
 

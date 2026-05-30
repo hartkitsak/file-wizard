@@ -1,5 +1,7 @@
 # File Wizard 🧙
 
+[![Use this template](https://img.shields.io/badge/-Use%20this%20template-2ea44f)](https://github.com/hartkitsak/file-wizard/generate)
+
 จัดระเบียบไฟล์บน Windows ด้วย PowerShell — วิเคราะห์, ค้นหาไฟล์ซ้ำ, rename เป็นชุด, cleanup, จัดโครงสร้าง folder
 
 ## วิธีใช้ (Claude Code / opencode)

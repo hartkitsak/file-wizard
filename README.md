@@ -4,10 +4,14 @@
 
 จัดระเบียบไฟล์บน Windows ด้วย PowerShell — วิเคราะห์, ค้นหาไฟล์ซ้ำ, rename เป็นชุด, cleanup, จัดโครงสร้าง folder
 
-## วิธีใช้ (Claude Code / opencode)
+## Quick Start
 
-```
-/file-wizard ช่วยจัด Downloads ให้หน่อย
+```powershell
+# 1. Clone ไปที่ skills folder
+git clone https://github.com/hartkitsak/file-wizard.git "$env:APPDATA\opencode\skills\file-wizard"
+
+# 2. เปิด Claude Code แล้วใช้:
+# /file-wizard ช่วยจัด Downloads ให้หน่อย
 ```
 
 ## โครงสร้าง

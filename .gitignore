@@ -1,0 +1,17 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temp
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
